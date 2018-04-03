@@ -62,9 +62,12 @@
 
             <div class="content-pane">
                 <div id="content1">
+		<div class="fixed">
                 <nav class="top-bar" data-topbar role="navigation">
                     <ul class="title-area">
-                        <li class="name"><!-- Leave this empty --></li>
+                        <li class="name"><!-- Leave this empty for no title-->
+				<h1><a href="{{ SITEURL }}">{{ SITENAME }}</a></h1>
+			</li>
                         <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
                     </ul>
                     <section class="top-bar-section">
@@ -80,10 +83,11 @@
                         </ul>
                     </section>
                 </nav>
+		</div>
 
                 <div class="row title-bar">
                     <div class="small-12 columns">
-                        <h1><a href="{{ SITEURL }}">{{ SITENAME }}</a></h1><h2> <small>{{ SITESUBTITLE }}</small></h2>
+			<h2> <small>{{ SITESUBTITLE }}</small></h2>
                         <hr>
                     </div>
                 </div>
