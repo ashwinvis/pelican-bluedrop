@@ -1,6 +1,15 @@
 {% extends "base.html" %}
 {% block content %}
 {% import 'macros.html' as macros %}
+
+<div class="row title-bar">
+    <div class="small-12 columns">
+	<h1><a href="{{ SITEURL }}">{{ AUTHOR }}</a></h1>
+	<h2> <small>{{ SITESUBTITLE }}</small></h2>
+	<hr>
+    </div>
+</div>
+            
 <div class="row">
     {% if articles|length >= 1 %}
     <div class="small-12 medium-12 columns">

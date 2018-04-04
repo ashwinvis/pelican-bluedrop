@@ -85,13 +85,6 @@
                 </nav>
 		</div>
 
-                <div class="row title-bar">
-                    <div class="small-12 columns">
-			<h2> <small>{{ SITESUBTITLE }}</small></h2>
-                        <hr>
-                    </div>
-                </div>
-            
                 <div id="contents">
                 {% block content %}
                     <div class="row">
@@ -109,7 +102,6 @@
                 <div class="row">
                     <div class="small-12 medium-4 large-12 columns">
                     {% if SITE_DESCRIPTION or EMAIL or SOCIAL %}
-                        <h5 class='text-center'>{{ AUTHOR }}</h5>
                         <div class="about-me">
                         {% if PROFILE_IMAGE %}
                             <div class="hide-for-medium-only small-3 columns no-buffer">
@@ -125,10 +117,13 @@
                             <div class="small-12 columns">
                                 <ul class="inline-center social-list">
                                 {% if EMAIL%}
-                                    <li><a href="mailto:{{ EMAIL}}"><i class="fa fa-envelope"></i>&nbsp; Email</a></li>
+                                    <li><a href="mailto:{{ EMAIL }}"><i class="fa fa-envelope"></i>&nbsp; Email</a></li>
                                 {% endif %}
                                 {% for name,link in SOCIAL %}
-                                    <li><a href="{{ link }}"><i class="fa fa-{{ name|lower }}"></i>&nbsp; {{ name }}</a></li>
+				    <li><a href="{{ link }}"><i class="fa fa-{{ name|lower }}"></i>&nbsp; {{ name }}</a></li>
+                                {% endfor %}
+                                {% for name,link in RESEARCH %}
+				    <li><a href="{{ link }}"><i class="fa fa-graduation-cap"></i>&nbsp; {{ name }}</a></li>
                                 {% endfor %}
                                 </ul>
                             </div>
@@ -138,15 +133,15 @@
                     </div>
 
                     <div class="small-8 medium-4  large-8 small-offset-2 medium-offset-0 large-offset-2 columns link-list">
-                    <h5 class="text-center">Search</h5>
+		    <h5 class="text-center"><b>Search</b></h5>
                     <form action="{{ SITEURL }}/search.html">
-                    <input type="text" name="q" id="tipue_search_input" placeholder="Search for keyword or phrase" autocomplete="off" required>
+                    <input type="text" name="q" id="tipue_search_input" placeholder="keyword or phrase" autocomplete="off" required>
                     </form>
                     </div>
 
                     <div class="small-12 medium-4  large-12 columns link-list">
                     {% if LINKS %}
-                        <h5 class='text-center'>Links</h5>
+			<h5 class='text-center'><b>Links</b></h5>
                         <ul class="inline-center">
                         {% for name, url in LINKS %}
                             <li><a href="{{ url }}">{{ name }}</a></li>
