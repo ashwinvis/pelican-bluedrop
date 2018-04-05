@@ -102,3 +102,4 @@ ENV/
 
 # Pelican
 pelican-themes/**/*.css.map
+pelican-themes/**/js/*.min.map
