@@ -9331,8 +9331,8 @@ footer {
   .master-row:after {
     clear: both; }
   .master-row .content-pane {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
     width: 100%;
     float: left;
     z-index: 10;
@@ -9343,10 +9343,8 @@ footer {
         padding-left: 0;
         padding-right: 0;
         width: 83.3333333333%;
-        float: left;
-        min-height: 100%;
-        right: 0;
-        float: right; } }
+        float: right;
+        min-height: 100%; } }
     .master-row .content-pane span, .master-row .content-pane h1, .master-row .content-pane h2, .master-row .content-pane h3, .master-row .content-pane h4, .master-row .content-pane h5, .master-row .content-pane h6 {
       font-family: "Droid Serif", "Noto Serif", Georgia, "DejaVu Serif", Cambria, "Times New Roman", Times, serif; }
     .master-row .content-pane .row {
@@ -9354,8 +9352,8 @@ footer {
       margin-right: 10%;
       min-width: 75%; }
   .master-row .image-pane {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
     width: 100%;
     float: left;
     z-index: 1;
