@@ -117,13 +117,13 @@
                             <div class="small-12 columns">
                                 <ul class="inline-center social-list">
                                 {% if EMAIL%}
-                                    <li><a href="mailto:{{ EMAIL }}"><i class="fa fa-envelope"></i>&nbsp; Email</a></li>
+                                    <li><a href="mailto:{{ EMAIL }}"><i class="far fa-envelope"></i>&nbsp; Email</a></li>
                                 {% endif %}
                                 {% for name,link in SOCIAL %}
-				    <li><a href="{{ link }}"><i class="fa fa-{{ name|lower }}"></i>&nbsp; {{ name }}</a></li>
+				    <li><a href="{{ link }}"><i class="fab fa-{{ name|lower }}"></i>&nbsp; {{ name }}</a></li>
                                 {% endfor %}
                                 {% for name,link in RESEARCH %}
-				    <li><a href="{{ link }}"><i class="fa fa-graduation-cap"></i>&nbsp; {{ name }}</a></li>
+				    <li><a href="{{ link }}"><i class="fas fa-graduation-cap"></i>&nbsp; {{ name }}</a></li>
                                 {% endfor %}
                                 </ul>
                             </div>
