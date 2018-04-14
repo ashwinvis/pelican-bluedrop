@@ -58,12 +58,9 @@
       
 
     <body>
-        <div class="master-row">
-
-            <div class="content-pane">
-                <div id="content1">
-		<div class="fixed">
-                <nav class="top-bar" data-topbar role="navigation">
+	<div class="top-row">
+	    <div class="fixed">
+		<nav class="top-bar" data-topbar role="navigation">
                     <ul class="title-area">
                         <li class="name"><!-- Leave this empty for no title-->
 				<h1><a href="{{ SITEURL }}">{{ SITENAME }}</a></h1>
@@ -83,8 +80,12 @@
                         </ul>
                     </section>
                 </nav>
-		</div>
+	    </div>
+	</div>
 
+        <div class="master-row">
+            <div class="content-pane">
+                <div id="content1">
                 <div id="contents">
                 {% block content %}
                     <div class="row">
@@ -117,7 +118,7 @@
                             <div class="small-12 columns">
                                 <ul class="inline-center social-list">
                                 {% if EMAIL%}
-                                    <li><a href="mailto:{{ EMAIL }}"><i class="far fa-envelope"></i>&nbsp; Email</a></li>
+                                    <li><a href="mailto:{{ EMAIL }}"><i class="fas fa-envelope"></i>&nbsp; Email</a></li>
                                 {% endif %}
                                 {% for name,link in SOCIAL %}
 				    <li><a href="{{ link }}"><i class="fab fa-{{ name|lower }}"></i>&nbsp; {{ name }}</a></li>

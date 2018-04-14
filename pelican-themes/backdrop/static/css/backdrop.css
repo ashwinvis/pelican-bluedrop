@@ -9319,12 +9319,28 @@ footer {
   font-family: Roboto, "Source Sans Pro", "Liberation Sans", "Nimbus Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #777777; }
 
+.top-row {
+  margin: 0 auto;
+  max-width: 62.5rem;
+  width: 100%;
+  display: block;
+  line-height: 1;
+  position: absolute;
+  z-index: 20;
+  min-width: 100%;
+  margin: 0; }
+  .top-row:before, .top-row:after {
+    content: " ";
+    display: table; }
+  .top-row:after {
+    clear: both; }
+
 .master-row {
   margin: 0 auto;
   max-width: 62.5rem;
   width: 100%;
   max-width: none;
-  margin-top: 2.1875rem; }
+  padding-top: 2.5rem; }
   .master-row:before, .master-row:after {
     content: " ";
     display: table; }
@@ -9348,8 +9364,6 @@ footer {
     .master-row .content-pane span, .master-row .content-pane h1, .master-row .content-pane h2, .master-row .content-pane h3, .master-row .content-pane h4, .master-row .content-pane h5, .master-row .content-pane h6 {
       font-family: "Droid Serif", "Noto Serif", Georgia, "DejaVu Serif", Cambria, "Times New Roman", Times, serif; }
     .master-row .content-pane .row {
-      margin-left: 5%;
-      margin-right: 10%;
       min-width: 75%; }
   .master-row .image-pane {
     padding-left: 0.9375rem;
@@ -9386,9 +9400,7 @@ footer {
         padding-left: 0.3125rem;
         height: 100%; }
         .master-row .image-pane .row {
-          max-width: 33.125rem;
-          margin-left: 0;
-          margin-right: auto; } }
+          max-width: 33.125rem; } }
 
 /*
 @media only screen and (min-width:64.0625em) {
@@ -9412,7 +9424,7 @@ footer {
 }
 */
 .title-bar h1 {
-  font-size: 2.625rem;
+  font-size: 2.0625rem;
   display: inline-block;
   margin-right: 1.25rem;
   margin-bottom: 0; }
@@ -9448,12 +9460,6 @@ nav.top-bar {
 }
 */
 @media only screen and (min-width: 40.0625em) {
-  /*
-// If you want menu-items to be centred
-    section.top-bar-section {
-        display: inline-block;
-    }
-*/
   .top-bar li.active:after {
     position: relative;
     display: block;
