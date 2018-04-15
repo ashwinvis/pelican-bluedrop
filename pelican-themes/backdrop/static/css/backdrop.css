@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'charter';
   src: url("../fonts/charter_bold_italic-webfont.eot");
@@ -2877,6 +2878,372 @@ readers do not read off random characters that represent icons */
 
 .fab {
   font-family: 'Font Awesome 5 Brands'; }
+
+/*
+ *  Academicons 1.8.6 by James Walsh (https://github.com/jpswalsh) and Katja Bercic (https://github.com/katjabercic)
+ *  Fonts generated using the IcoMoon app - http://icomoon.io/app
+ *  Square icons designed to be used alongside Font Awesome square icons - https://fortawesome.github.io/Font-Awesome/
+ *  Licenses - Font: SIL OFL 1.1, CSS: MIT License
+ */
+@font-face {
+  font-family: 'Academicons';
+  src: url("../fonts/academicons.eot?v=1.8.6");
+  src: url("../fonts/academicons.eot?v=1.8.6") format("embedded-opentype"), url("../fonts/academicons.ttf?v=1.8.6") format("truetype"), url("../fonts/academicons.woff?v=1.8.6") format("woff"), url("../fonts/academicons.svg?v=1.8.6#academicons") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+.ai {
+  display: inline-block;
+  font: normal normal normal 14px/1 Academicons;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.ai-academia:before {
+  content: "\e9af"; }
+
+.ai-academia-square:before {
+  content: "\e93d"; }
+
+.ai-acclaim:before {
+  content: "\e92e"; }
+
+.ai-acclaim-square:before {
+  content: "\e93a"; }
+
+.ai-acm:before {
+  content: "\e93c"; }
+
+.ai-acm-square:before {
+  content: "\e95d"; }
+
+.ai-acmdl:before {
+  content: "\e96a"; }
+
+.ai-acmdl-square:before {
+  content: "\e9d3"; }
+
+.ai-ads:before {
+  content: "\e9cb"; }
+
+.ai-ads-square:before {
+  content: "\e94a"; }
+
+.ai-arxiv:before {
+  content: "\e974"; }
+
+.ai-arxiv-square:before {
+  content: "\e9a6"; }
+
+.ai-biorxiv:before {
+  content: "\e9a2"; }
+
+.ai-biorxiv-square:before {
+  content: "\e98b"; }
+
+.ai-ceur:before {
+  content: "\e96d"; }
+
+.ai-ceur-square:before {
+  content: "\e92f"; }
+
+.ai-coursera:before {
+  content: "\e95f"; }
+
+.ai-coursera-square:before {
+  content: "\e97f"; }
+
+.ai-cv:before {
+  content: "\e9a5"; }
+
+.ai-cv-square:before {
+  content: "\e90a"; }
+
+.ai-dataverse:before {
+  content: "\e9f7"; }
+
+.ai-dataverse-square:before {
+  content: "\e9e4"; }
+
+.ai-dblp:before {
+  content: "\e94f"; }
+
+.ai-dblp-square:before {
+  content: "\e93f"; }
+
+.ai-depsy:before {
+  content: "\e97a"; }
+
+.ai-depsy-square:before {
+  content: "\e94b"; }
+
+.ai-doi:before {
+  content: "\e97e"; }
+
+.ai-doi-square:before {
+  content: "\e98f"; }
+
+.ai-dryad:before {
+  content: "\e97c"; }
+
+.ai-dryad-square:before {
+  content: "\e98c"; }
+
+.ai-figshare:before {
+  content: "\e981"; }
+
+.ai-figshare-square:before {
+  content: "\e9e7"; }
+
+.ai-google-scholar:before {
+  content: "\e9d4"; }
+
+.ai-google-scholar-square:before {
+  content: "\e9f9"; }
+
+.ai-ideas-repec:before {
+  content: "\e9ed"; }
+
+.ai-ideas-repec-square:before {
+  content: "\e9f8"; }
+
+.ai-ieee:before {
+  content: "\e929"; }
+
+.ai-ieee-square:before {
+  content: "\e9b9"; }
+
+.ai-impactstory:before {
+  content: "\e9cf"; }
+
+.ai-impactstory-square:before {
+  content: "\e9aa"; }
+
+.ai-inspire:before {
+  content: "\e9e9"; }
+
+.ai-inspire-square:before {
+  content: "\e9fe"; }
+
+.ai-lattes:before {
+  content: "\e9b3"; }
+
+.ai-lattes-square:before {
+  content: "\e99c"; }
+
+.ai-mathoverflow:before {
+  content: "\e9f6"; }
+
+.ai-mathoverflow-square:before {
+  content: "\e97b"; }
+
+.ai-mendeley:before {
+  content: "\e9f0"; }
+
+.ai-mendeley-square:before {
+  content: "\e9f3"; }
+
+.ai-open-access:before {
+  content: "\e939"; }
+
+.ai-open-access-square:before {
+  content: "\e9f4"; }
+
+.ai-orcid:before {
+  content: "\e9d9"; }
+
+.ai-orcid-square:before {
+  content: "\e9c3"; }
+
+.ai-osf:before {
+  content: "\e9ef"; }
+
+.ai-osf-square:before {
+  content: "\e931"; }
+
+.ai-overleaf:before {
+  content: "\e914"; }
+
+.ai-overleaf-square:before {
+  content: "\e98d"; }
+
+.ai-philpapers:before {
+  content: "\e98a"; }
+
+.ai-philpapers-square:before {
+  content: "\e96f"; }
+
+.ai-piazza:before {
+  content: "\e99a"; }
+
+.ai-piazza-square:before {
+  content: "\e90c"; }
+
+.ai-publons:before {
+  content: "\e937"; }
+
+.ai-publons-square:before {
+  content: "\e94e"; }
+
+.ai-pubmed:before {
+  content: "\e99f"; }
+
+.ai-pubmed-square:before {
+  content: "\e97d"; }
+
+.ai-researcherid:before {
+  content: "\e91a"; }
+
+.ai-researcherid-square:before {
+  content: "\e95c"; }
+
+.ai-researchgate:before {
+  content: "\e95e"; }
+
+.ai-researchgate-square:before {
+  content: "\e99e"; }
+
+.ai-scirate:before {
+  content: "\e98e"; }
+
+.ai-scirate-square:before {
+  content: "\e99d"; }
+
+.ai-semantic-scholar:before {
+  content: "\e96e"; }
+
+.ai-semantic-scholar-square:before {
+  content: "\e96c"; }
+
+.ai-springer:before {
+  content: "\e928"; }
+
+.ai-springer-square:before {
+  content: "\e99b"; }
+
+.ai-zotero:before {
+  content: "\e962"; }
+
+.ai-zotero-square:before {
+  content: "\e932"; }
+
+/*  Duplication of the FontAwesome style classes using 'ai' in place of 'fa'. */
+.ai-lg {
+  font-size: 1.33333333em;
+  line-height: 0.75em;
+  vertical-align: -15%; }
+
+.ai-2x {
+  font-size: 2em; }
+
+.ai-3x {
+  font-size: 3em; }
+
+.ai-4x {
+  font-size: 4em; }
+
+.ai-5x {
+  font-size: 5em; }
+
+.ai-fw {
+  width: 1.28571429em;
+  text-align: center; }
+
+.ai-ul {
+  padding-left: 0;
+  margin-left: 2.14285714em;
+  list-style-type: none; }
+
+.ai-ul > li {
+  position: relative; }
+
+.ai-li {
+  position: absolute;
+  left: -2.14285714em;
+  width: 2.14285714em;
+  top: 0.14285714em;
+  text-align: center; }
+
+.ai-li.fa-lg {
+  left: -1.85714286em; }
+
+.ai-border {
+  padding: .2em .25em .15em;
+  border: solid 0.08em #eeeeee;
+  border-radius: .1em; }
+
+.ai-pull-left {
+  float: left; }
+
+.ai-pull-right {
+  float: right; }
+
+.ai.fa-pull-left {
+  margin-right: .3em; }
+
+.ai.fa-pull-right {
+  margin-left: .3em; }
+
+/*  
+ *  Repeat of the FontAwesome style classes to prevent override if academicons.css
+ *  is called after font-awesome.css.
+ */
+.fa-lg {
+  font-size: 1.33333333em;
+  line-height: 0.75em;
+  vertical-align: -15%; }
+
+.fa-2x {
+  font-size: 2em; }
+
+.fa-3x {
+  font-size: 3em; }
+
+.fa-4x {
+  font-size: 4em; }
+
+.fa-5x {
+  font-size: 5em; }
+
+.fa-fw {
+  width: 1.28571429em;
+  text-align: center; }
+
+.fa-ul {
+  padding-left: 0;
+  margin-left: 2.14285714em;
+  list-style-type: none; }
+
+.fa-ul > li {
+  position: relative; }
+
+.fa-li {
+  position: absolute;
+  left: -2.14285714em;
+  width: 2.14285714em;
+  top: 0.14285714em;
+  text-align: center; }
+
+.fa-li.fa-lg {
+  left: -1.85714286em; }
+
+.fa-border {
+  padding: .2em .25em .15em;
+  border: solid 0.08em #eeeeee;
+  border-radius: .1em; }
+
+.fa-pull-left {
+  float: left; }
+
+.fa-pull-right {
+  float: right; }
+
+.fa.fa-pull-left {
+  margin-right: .3em; }
+
+.fa.fa-pull-right {
+  margin-left: .3em; }
 
 /*
 #14455c
@@ -9270,11 +9637,219 @@ th.hide-for-touch {
   th.show-for-print {
     display: table-cell !important; } }
 
-.article p img {
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent; }
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0; }
+  .slick-list:focus {
+    outline: none; }
+  .slick-list.dragging {
+    cursor: pointer;
+    cursor: hand; }
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+  .slick-track:before, .slick-track:after {
+    content: "";
+    display: table; }
+  .slick-track:after {
+    clear: both; }
+  .slick-loading .slick-track {
+    visibility: hidden; }
+
+.slick-slide {
   float: left;
-  margin: 25px;
+  height: 100%;
+  min-height: 1px;
+  display: none; }
+  [dir="rtl"] .slick-slide {
+    float: right; }
+  .slick-slide img {
+    display: block; }
+  .slick-slide.slick-loading img {
+    display: none; }
+  .slick-slide.dragging img {
+    pointer-events: none; }
+  .slick-initialized .slick-slide {
+    display: block; }
+  .slick-loading .slick-slide {
+    visibility: hidden; }
+  .slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent; }
+
+.slick-arrow.slick-hidden {
+  display: none; }
+
+/* Slider */
+.slick-loading .slick-list {
+  background: #fff url("../ajax-loader.gif") center center no-repeat; }
+
+/* Icons */
+@font-face {
+  font-family: "slick";
+  src: url("../fonts/slick.eot");
+  src: url("../fonts/slick.eot?#iefix") format("embedded-opentype"), url("../fonts/slick.woff") format("woff"), url("../fonts/slick.ttf") format("truetype"), url("../fonts/slick.svg#slick") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* Arrows */
+.slick-prev,
+.slick-next {
+  position: absolute;
+  display: block;
+  height: 20px;
+  width: 20px;
+  line-height: 0px;
+  font-size: 0px;
+  cursor: pointer;
+  background: transparent;
+  color: transparent;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  padding: 0;
+  border: none;
+  outline: none; }
+  .slick-prev:hover, .slick-prev:focus,
+  .slick-next:hover,
+  .slick-next:focus {
+    outline: none;
+    background: transparent;
+    color: transparent; }
+    .slick-prev:hover:before, .slick-prev:focus:before,
+    .slick-next:hover:before,
+    .slick-next:focus:before {
+      opacity: 1; }
+  .slick-prev.slick-disabled:before,
+  .slick-next.slick-disabled:before {
+    opacity: 0.25; }
+  .slick-prev:before,
+  .slick-next:before {
+    font-family: "slick";
+    font-size: 20px;
+    line-height: 1;
+    color: #000000;
+    opacity: 0.75;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
+
+.slick-prev {
+  left: -25px; }
+  [dir="rtl"] .slick-prev {
+    left: auto;
+    right: -25px; }
+  .slick-prev:before {
+    content: "←"; }
+    [dir="rtl"] .slick-prev:before {
+      content: "→"; }
+
+.slick-next {
+  right: -25px; }
+  [dir="rtl"] .slick-next {
+    left: -25px;
+    right: auto; }
+  .slick-next:before {
+    content: "→"; }
+    [dir="rtl"] .slick-next:before {
+      content: "←"; }
+
+/* Dots */
+.slick-dotted.slick-slider {
+  margin-bottom: 30px; }
+
+.slick-dots {
+  position: absolute;
+  bottom: -25px;
+  list-style: none;
+  display: block;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  width: 100%; }
+  .slick-dots li {
+    position: relative;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer; }
+    .slick-dots li button {
+      border: 0;
+      background: transparent;
+      display: block;
+      height: 20px;
+      width: 20px;
+      outline: none;
+      line-height: 0px;
+      font-size: 0px;
+      color: transparent;
+      padding: 5px;
+      cursor: pointer; }
+      .slick-dots li button:hover, .slick-dots li button:focus {
+        outline: none; }
+        .slick-dots li button:hover:before, .slick-dots li button:focus:before {
+          opacity: 1; }
+      .slick-dots li button:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "•";
+        width: 20px;
+        height: 20px;
+        font-family: "slick";
+        font-size: 6px;
+        line-height: 20px;
+        text-align: center;
+        color: #bdbcbc;
+        opacity: 0.25;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale; }
+    .slick-dots li.slick-active button:before {
+      color: #000000;
+      opacity: 0.75; }
+
+.article p img {
+  float: right;
   border: solid 4px #FFFFFF;
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+  margin: 0.625rem; }
+  @media only screen and (min-width: 40.0625em) {
+    .article p img {
+      margin: 1.5625rem; } }
 
 #link-image img {
   max-height: 33%; }
@@ -9340,7 +9915,7 @@ footer {
   max-width: 62.5rem;
   width: 100%;
   max-width: none;
-  padding-top: 2.5rem; }
+  padding-top: 2.8125rem; }
   .master-row:before, .master-row:after {
     content: " ";
     display: table; }
@@ -9363,8 +9938,33 @@ footer {
         min-height: 100%; } }
     .master-row .content-pane span, .master-row .content-pane h1, .master-row .content-pane h2, .master-row .content-pane h3, .master-row .content-pane h4, .master-row .content-pane h5, .master-row .content-pane h6 {
       font-family: "Droid Serif", "Noto Serif", Georgia, "DejaVu Serif", Cambria, "Times New Roman", Times, serif; }
+    .master-row .content-pane pre {
+      white-space: pre-wrap;
+      /* css-3 */
+      white-space: -moz-pre-wrap;
+      /* Mozilla, since 1999 */
+      white-space: -pre-wrap;
+      /* Opera 4-6 */
+      white-space: -o-pre-wrap;
+      /* Opera 7 */
+      word-wrap: break-word;
+      /* Internet Explorer 5.5+ */ }
     .master-row .content-pane .row {
       min-width: 75%; }
+    .master-row .content-pane .carousel-row {
+      margin: 0 auto;
+      max-width: 62.5rem;
+      width: 100%;
+      text-align: center; }
+      .master-row .content-pane .carousel-row:before, .master-row .content-pane .carousel-row:after {
+        content: " ";
+        display: table; }
+      .master-row .content-pane .carousel-row:after {
+        clear: both; }
+      .master-row .content-pane .carousel-row .carousel-nav-title {
+        text-align: center;
+        padding: 0.625rem;
+        font-size: 1.25rem; }
   .master-row .image-pane {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
@@ -9381,8 +9981,8 @@ footer {
       color: #FFFFFF; }
     .master-row .image-pane form {
       color: #222; }
-    .master-row .image-pane div, .master-row .image-pane span, .master-row .image-pane a, .master-row .image-pane p {
-      font-size: 0.9rem; }
+    .master-row .image-pane div, .master-row .image-pane span, .master-row .image-pane a, .master-row .image-pane p, .master-row .image-pane input {
+      font-size: 1rem; }
     .master-row .image-pane i {
       color: inherit; }
     .master-row .image-pane a {

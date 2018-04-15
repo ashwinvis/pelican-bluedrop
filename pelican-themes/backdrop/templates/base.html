@@ -54,8 +54,25 @@
             }());
         </script>
         {% endif %}
+
+        {% if EMAIL %}
+        <script language="JavaScript" type="text/javascript">
+          function decrypt_email(a) {
+            // ROT13 : a Caesar cipher
+            // letter -> letter' such that code(letter') = (code(letter) + 13) modulo 26
+            return a.replace(/[a-zA-Z]/g,
+                             function(c){
+				     return String.fromCharCode((c <= "Z" ? 90 : 122) >= (c = c.charCodeAt(0) + 13) ? c : c - 26);
+			     })
+          }
+          function openMailer(element) {
+            var y = decrypt_email("{{ EMAIL }}");
+            element.setAttribute("href", y);
+          }
+        </script>
+        {% endif %}
+
     </head>
-      
 
     <body>
 	<div class="top-row">
@@ -117,14 +134,16 @@
                         {% if EMAIL or SOCIAL %}
                             <div class="small-12 columns">
                                 <ul class="inline-center social-list">
-                                {% if EMAIL%}
-                                    <li><a href="mailto:{{ EMAIL }}"><i class="fas fa-envelope"></i>&nbsp; Email</a></li>
+                                {% if EMAIL %}
+                                    <li><a href="encrypted-mail:Click to reveal" onclick="openMailer(this);">
+					<i class="fas fa-envelope"></i>&nbsp; Email</a>
+				    </li>
                                 {% endif %}
                                 {% for name,link in SOCIAL %}
 				    <li><a href="{{ link }}"><i class="fab fa-{{ name|lower }}"></i>&nbsp; {{ name }}</a></li>
                                 {% endfor %}
                                 {% for name,link in RESEARCH %}
-				    <li><a href="{{ link }}"><i class="fas fa-graduation-cap"></i>&nbsp; {{ name }}</a></li>
+                                    <li><a href="{{ link }}"><i class="ai ai-{{ name|lower }}"></i>&nbsp; {{ name }}</a></li>
                                 {% endfor %}
                                 </ul>
                             </div>
@@ -164,6 +183,8 @@
         
         <script src="{{ SITEURL }}/theme/js/jquery.min.js"></script>
         <script src="{{ SITEURL }}/theme/js/foundation.min.js"></script>
+	<script src="{{ SITEURL }}/theme/js/slick.min.js"></script>
+	<script src="{{ SITEURL }}/theme/js/slick-app.js"></script>
         <script src="{{ SITEURL }}/theme/js/app.js"></script>
         {% block script %}
         {% endblock script %}
