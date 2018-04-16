@@ -9761,7 +9761,7 @@ th.hide-for-touch {
     font-family: "slick";
     font-size: 20px;
     line-height: 1;
-    color: #000000;
+    color: #bdbcbc;
     opacity: 0.75;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; }
@@ -9933,7 +9933,7 @@ footer {
       .master-row .content-pane {
         padding-left: 0;
         padding-right: 0;
-        width: 83.3333333333%;
+        width: 79.1666666667%;
         float: right;
         min-height: 100%; } }
     .master-row .content-pane span, .master-row .content-pane h1, .master-row .content-pane h2, .master-row .content-pane h3, .master-row .content-pane h4, .master-row .content-pane h5, .master-row .content-pane h6 {
@@ -9983,6 +9983,8 @@ footer {
       color: #222; }
     .master-row .image-pane div, .master-row .image-pane span, .master-row .image-pane a, .master-row .image-pane p, .master-row .image-pane input {
       font-size: 1rem; }
+    .master-row .image-pane .site-description {
+      font-size: 0.75rem; }
     .master-row .image-pane i {
       color: inherit; }
     .master-row .image-pane a {
@@ -9993,7 +9995,7 @@ footer {
       .master-row .image-pane {
         padding-left: 0;
         padding-right: 0;
-        width: 16.6666666667%;
+        width: 20.8333333333%;
         float: left;
         min-height: auto;
         position: fixed;
@@ -10307,6 +10309,11 @@ pre {
   margin-left: auto !important;
   margin-right: auto !important;
   display: block; }
+
+.link-img {
+  margin-bottom: 1.875rem;
+  max-width: 4.375rem;
+  max-height: 6.25rem; }
 
 /*
 Tipue Search 4.0

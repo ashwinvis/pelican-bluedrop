@@ -85,7 +85,7 @@
                         <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
                     </ul>
                     <section class="top-bar-section">
-                        <ul class="left">
+                        <ul class="right">
                         {% for p in pages %}
                             <li{% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
                         {% endfor %}
@@ -129,7 +129,9 @@
                             </div>
                         {% endif %}
                             <div class="{% if PROFILE_IMAGE %}small-9 medium-12 large-9{% else %}small-12{% endif %} columns text-justify">
+				<div class="site-description">
                                 {{ SITE_DESCRIPTION }}
+				</div>
                             </div>
                         {% if EMAIL or SOCIAL %}
                             <div class="small-12 columns">
@@ -157,11 +159,17 @@
                     <form action="{{ SITEURL }}/search.html">
                     <input type="text" name="q" id="tipue_search_input" placeholder="keyword or phrase" autocomplete="off" required>
                     </form>
+		    {% if EMBLEMS %}
+                        {% for imgsrc, url in EMBLEMS %}
+                         <a class="th link-img img-center" href="{{ url |replace('{filename}',SITEURL)|replace('|filename|',SITEURL) }}">
+                              <img src="{{ imgsrc|replace('{filename}',SITEURL)|replace('|filename|',SITEURL) }}">
+                         </a>
+			 {% endfor %}
+		    {% endif %}
                     </div>
 
                     <div class="small-12 medium-4  large-12 columns link-list">
                     {% if LINKS %}
-			<h5 class='text-center'><b>Links</b></h5>
                         <ul class="inline-center">
                         {% for name, url in LINKS %}
                             <li><a href="{{ url }}">{{ name }}</a></li>
