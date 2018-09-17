@@ -13,8 +13,8 @@
         <meta name="keywords" content="Blog{% for keyword in BLOGKEYWORDS %} {{ keyword }}{% endfor %} "/>
         {% endblock description %}
 
-        <link rel="stylesheet" href="{{ SITEURL }}/theme/css/backdrop.css" />
-        <link rel="stylesheet" href="{{ SITEURL }}/theme/css/pygments.css" />
+        <link rel="stylesheet" href="{{ SITEURL }}/theme/css/backdrop.min.css" />
+        <link rel="stylesheet" href="{{ SITEURL }}/theme/css/pygments.min.css" />
         <script src="{{ SITEURL }}/theme/js/modernizr.js"></script>
 
         {% if FEED_ALL_ATOM %}
@@ -188,13 +188,12 @@
             </footer>
         </div>
         
-        
+        {% block script %}
         <script src="{{ SITEURL }}/theme/js/jquery.min.js"></script>
         <script src="{{ SITEURL }}/theme/js/foundation.min.js"></script>
-	<script src="{{ SITEURL }}/theme/js/slick.min.js"></script>
-	<script src="{{ SITEURL }}/theme/js/slick-app.js"></script>
+        <script src="{{ SITEURL }}/theme/js/slick.min.js"></script>
+        <script src="{{ SITEURL }}/theme/js/slick-app.js"></script>
         <script src="{{ SITEURL }}/theme/js/app.js"></script>
-        {% block script %}
         {% endblock script %}
     </body>
   
