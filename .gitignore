@@ -101,5 +101,7 @@ ENV/
 .mypy_cache/
 
 # Pelican
-pelican-themes/**/*.css.map
-pelican-themes/**/js/*.min.map
+bluedrop/**/*.css.map
+bluedrop/**/js/*.min.map
+
+examples/**/output
