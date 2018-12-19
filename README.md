@@ -16,13 +16,20 @@ pelican-themes -i theme/pelican-themes/backdrop
 
 ## Screenshots
 
-![The homepage](https://raw.githubusercontent.com/ashwinvis/pelican-bluedrop/master/examples/demo/images/demo-desktop.png)
+<img src="https://raw.githubusercontent.com/ashwinvis/pelican-bluedrop/master/examples/demo/images/demo-desktop.png" width="70%">
 
 This is an example of the same on a tablet.
-![The homepage on a tablet](https://raw.githubusercontent.com/ashwinvis/pelican-bluedrop/master/examples/demo/images/demo-tablet-top.png) ![The homepage on a tablet](https://raw.githubusercontent.com/ashwinvis/pelican-bluedrop/master/examples/demo/images/demo-tablet-bot.png)
+
+<div>
+<img src="https://raw.githubusercontent.com/ashwinvis/pelican-bluedrop/master/examples/demo/images/demo-tablet-top.png" width="35%"/>
+<img src="https://raw.githubusercontent.com/ashwinvis/pelican-bluedrop/master/examples/demo/images/demo-tablet-bot.png" width="35%"/>
+</div>
 
 This is an example of the same on a mobile.
-![The homepage on a mobile](https://raw.githubusercontent.com/ashwinvis/pelican-bluedrop/master/examples/demo/images/demo-mobile-top.png) ![The homepage on a mobile](https://raw.githubusercontent.com/ashwinvis/pelican-bluedrop/master/examples/demo/images/demo-mobile-bot.png)
+<div>
+<img src="https://raw.githubusercontent.com/ashwinvis/pelican-bluedrop/master/examples/demo/images/demo-mobile-top.png" width="35%"/>
+<img src="https://raw.githubusercontent.com/ashwinvis/pelican-bluedrop/master/examples/demo/images/demo-mobile-bot.png" width="35%"/>
+</div>
 
 I you want to customize Bluedrop, perhaps consider using
 [Sass](http://sass-lang.com/) and [Grunt](http://gruntjs.com/), as I did when
