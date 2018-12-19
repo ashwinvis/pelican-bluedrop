@@ -133,12 +133,22 @@
                                 {{ SITE_DESCRIPTION }}
 				</div>
                             </div>
-                        {% if EMAIL or SOCIAL %}
+                        {% if EMAIL or GPG or MASTODON or SOCIAL or RESEARCH %}
                             <div class="small-12 columns">
                                 <ul class="inline-center social-list">
                                 {% if EMAIL %}
                                     <li><a href="encrypted-mail:Click to reveal" onclick="openMailer(this);">
 					<i class="fas fa-envelope"></i>&nbsp; Email</a>
+				    </li>
+                                {% endif %}
+                                {% if GPG %}
+				    <li><a href={{ GPG }}>
+					<i class="fas fa-fingerprint"></i>&nbsp; GnuPG</a>
+				    </li>
+                                {% endif %}
+                                {% if MASTODON %}
+				    <li><a rel="me" href={{ MASTODON }}>
+					<i class="fab fa-mastodon"></i>&nbsp; Mastodon</a>
 				    </li>
                                 {% endif %}
                                 {% for name,link in SOCIAL %}
