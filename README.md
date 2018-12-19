@@ -5,17 +5,24 @@ It is designed to look modern, but at the same time traditional,
 using a serif font and darker colours. It features full
 [Disqus](https://disqus.com/) integration and can be customized through
 variables in your Pelican configuration file. See it live at
-[my blog](http://ashwinvis.github.io/blog/).
+[my blog](http://ashwinvis.github.io/).
+
+## Installation
+
+```sh
+pip install "pelican>=4.0.1"
+pelican-themes -i theme/pelican-themes/backdrop
+```
+
+## Screenshots
 
 ![The homepage](https://raw.githubusercontent.com/ashwinvis/pelican-bluedrop/master/examples/demo/images/demo-desktop.png)
 
 This is an example of the same on a tablet.
-![The homepage on a tablet](https://raw.githubusercontent.com/ashwinvis/pelican-bluedrop/master/examples/demo/images/demo-tablet-top.png)
-![The homepage on a tablet](https://raw.githubusercontent.com/ashwinvis/pelican-bluedrop/master/examples/demo/images/demo-tablet-bot.png)
+![The homepage on a tablet](https://raw.githubusercontent.com/ashwinvis/pelican-bluedrop/master/examples/demo/images/demo-tablet-top.png) ![The homepage on a tablet](https://raw.githubusercontent.com/ashwinvis/pelican-bluedrop/master/examples/demo/images/demo-tablet-bot.png)
 
 This is an example of the same on a mobile.
-![The homepage on a mobile](https://raw.githubusercontent.com/ashwinvis/pelican-bluedrop/master/examples/demo/images/demo-mobile-top.png)
-![The homepage on a mobile](https://raw.githubusercontent.com/ashwinvis/pelican-bluedrop/master/examples/demo/images/demo-mobile-bot.png)
+![The homepage on a mobile](https://raw.githubusercontent.com/ashwinvis/pelican-bluedrop/master/examples/demo/images/demo-mobile-top.png) ![The homepage on a mobile](https://raw.githubusercontent.com/ashwinvis/pelican-bluedrop/master/examples/demo/images/demo-mobile-bot.png)
 
 I you want to customize Bluedrop, perhaps consider using
 [Sass](http://sass-lang.com/) and [Grunt](http://gruntjs.com/), as I did when
