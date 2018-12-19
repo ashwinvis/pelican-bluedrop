@@ -11,7 +11,7 @@ variables in your Pelican configuration file. See it live at
 
 ```sh
 pip install "pelican>=4.0.1"
-pelican-themes -i theme/pelican-themes/backdrop
+pelican-themes -i ./bluedrop
 ```
 
 ## Screenshots
