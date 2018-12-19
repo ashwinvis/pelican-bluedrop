@@ -20,7 +20,8 @@ This is an example of the same on a mobile.
 I you want to customize Bluedrop, perhaps consider using
 [Sass](http://sass-lang.com/) and [Grunt](http://gruntjs.com/), as I did when
 originally designing it. See the
-[backdrop-theme](https://github.com/ashwinvis/backdrop-theme) repository.
+[backdrop-theme](https://github.com/ashwinvis/backdrop-theme) repository for
+the source files.
 
 ## Compatible Plugins
 The theme has been designed to use the [representative_image](https://github.com/getpelican/pelican-plugins/tree/master/representative_image) plugin. However,
@@ -34,39 +35,10 @@ plugins, but these work with all themes and Bluedrop is in no way special in
 this regard.
 
 ## Theme Variables
-The following variables can be set in your `pelicanconf.py` file in order to
-customize your website.
+Have a look at the `examples` directory to see which theme variables can be set
+in your `pelicanconf.py` file in order to customize your website.
 
-- `SITESUBTITLE`, appears below the SITENAME at the top of the page
-- `PROFILE_IMAGE`, the path to a picture of you or your organization to display
-  in the sidebar next to any description
-- `FAVICON`, the path to a PNG or ICO image to be used as a favicon
-- `BACKDROP_IMAGE`, the path to the picture to be displayed in the
-  sidebar/bottom-bar
-- `SITE_DESCRIPTION`, a few words about you or your website, to be displayed in
-  the sidebar next to the profile image
-- `LINKS`, a list of tuples (title, URL) for external sites which will appear
-  on the sidebar. Can be used as a blogroll
-- `DISQUS_URL`, the short [Disqus](https://disqus.com/) sitename, allowing
-  Disqus comments to be displayed on your website
-- `SOCIAL`, a list of tuples (title, URL) to appear below the PROFILE_IMAGE
-  and SITE_DESCRIPTION, linking to social media. The title should be whatever
-  you want the text to be in the link, but in order to have an icon it must
-  correspond to the name of a
-  [Font Awesome](http://fortawesome.github.io/Font-Awesome/icons/#brand)
-  icon when converted to lowercase.
-- `EMAIL`, displayed alongside SOCIAL
-- `YEAR`, the year to appear in the copyright notice. (Hint: `from datetime
-  import date`, `YEAR = date.today().year`)
-- `TAG_CLOUD_MAX_ITEMS`, the number of tags to display in the footer of the
-  website
-- `LICENSE`, the license under which to release the websites contents
-  (ex: Creative Commons). Write it in HTML in order to use an image and/or link.
-- `BLOGKEYWORDS`, a list or tuple of strings containg keywords to be placed
-  in the metadata of your website, allowing Google to better categorize it
 
-The paths for FAVICON, PROFILE\_IMAGE, and BACKDROP\_IMAGE can all use the
-same `{filename}`/`|filename|` syntax as done when linking between articles.
-
-If your website is paginated, make sure to include the following:
-`PAGINATED_DIRECT_TEMPLATES = ('categories', 'archives')`.
+## Credits
+Thanks to [Chris MacMackin](https://cmacmackin.github.io/) for the original
+[backdrop-theme](https://github.com/cmacmackin/backdrop-theme).
