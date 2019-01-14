@@ -105,3 +105,6 @@ bluedrop/**/*.css.map
 bluedrop/**/js/*.min.map
 
 examples/**/output
+
+plugins/*/.git*
+plugins/*/tests
