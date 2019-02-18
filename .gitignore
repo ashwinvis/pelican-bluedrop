@@ -103,6 +103,9 @@ ENV/
 # Pelican
 bluedrop/**/*.css.map
 bluedrop/**/js/*.min.map
+bluedrop/LICENSE
+bluedrop/README.md
+bluedrop/screenshot*.png
 
 examples/**/output
 
