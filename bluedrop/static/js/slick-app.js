@@ -22,4 +22,8 @@ $(document).ready(function(){
       focusOnSelect: true
     });
 
+    $('.lazy').slick({
+      lazyLoad: 'ondemand'
+    });
+
 });

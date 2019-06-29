@@ -14,9 +14,10 @@
 <div class="row carousel-row">
    {% if CAROUSEL %}
    <div class="small-11 small-centered columns">
-        <div class="carousel">
+        <div class="carousel lazy">
              {% for name, src, url in CAROUSEL %}
-             <div class="carousel-img"><a class="th" href="{{ url }}"><img src="{{ src }}"></a></div>
+             <div class="carousel-img"><a class="th" href="{{ url }}"><img
+                 data-lazy="{{ src }}"></a></div>
              {% endfor %}
         </div>
         <div class="carousel-nav">
