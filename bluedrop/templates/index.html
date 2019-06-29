@@ -28,28 +28,27 @@
     {% endif %}
 </div>
 
-<div class="row">
+<hr>
+
+<div class="row summary">
     {% if articles|length >= 1 %}
-    <div class="small-12 medium-12 columns">
+    <div class="small-12 medium-6 columns">
         {{ macros.article_summary(articles[0],SITEURL,True,disqus=DISQUS_SITENAME) }}
     </div>
     {% endif %}
     {% if articles|length >= 2 %}
     <div class="small-12 {%if articles|length > 2%}medium-6{%endif%} columns small-articles">
-        {{ macros.article_summary(articles[1],SITEURL,False,False,disqus=DISQUS_SITENAME) }}
-    </div>
-    {% endif %}
-    {% if articles|length >= 3 %}
-    <div class="small-12 medium-6 columns small-articles">
-        {{ macros.article_summary(articles[2],SITEURL,False,False,disqus=DISQUS_SITENAME) }}
+      <h3>Recent articles</h3>
+      <hr>
+      <ul class="no-bullet">
+        {% for article in articles[1:6] %}
+        <li><h6><a href="{{ article.url }}">{{ article.title }}</a>
+            <small><em>{{ article.date|strftime('%d %B %Y') }}</em></small>
+        </h6></li>
+        {% endfor %}
+      </ul>
+      <a class="button" href="{{ SITEURL }}/archives.html">See more&hellip;</a>
     </div>
     {% endif %}
 </div>
-{% if articles|length > 3 %}
-<div class="row">
-    <div class="small-12 columns">
-        <a class="button" href="{{ SITEURL }}/archives.html">Older Articles&hellip;</a>
-    </div>
-</div>
-{% endif %}
 {% endblock content %}
