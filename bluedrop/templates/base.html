@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="author" content="{{AUTHOR}}" />
         <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
-        
+
         {% block description %}
         <meta name="description" content="{{ SITESUBTITLE }}" />
         <meta name="keywords" content="Blog{% for keyword in BLOGKEYWORDS %} {{ keyword }}{% endfor %} "/>
@@ -15,6 +15,7 @@
 
         <link rel="stylesheet" href="{{ SITEURL }}/theme/css/backdrop.min.css" />
         <link rel="stylesheet" href="{{ SITEURL }}/theme/css/pygments.min.css" />
+        <link rel="stylesheet" href="{{ SITEURL }}/theme/css/dark.min.css" />
         <script src="{{ SITEURL }}/theme/js/modernizr.js"></script>
 
         {% if FEED_ALL_ATOM %}
@@ -44,7 +45,7 @@
 
         {% if DISQUS_SITENAME %}
         <script type="text/javascript">
-            var disqus_shortname = '{{ DISQUS_SITENAME }}'; 
+            var disqus_shortname = '{{ DISQUS_SITENAME }}';
 
             (function () {
                 var s = document.createElement('script'); s.async = true;
@@ -115,7 +116,7 @@
                     {% include 'footer.html' %}
                 </footer>
             </div>
-            
+
             <div class="image-pane" style="background: url('{{ BACKDROP_IMAGE|replace('{filename}',SITEURL)|replace('|filename|',SITEURL) }}'); background-size:cover; background-position: right;">
                 <div class="row">
                     <div class="small-12 medium-4 large-12 columns">
@@ -190,14 +191,14 @@
                </div>
             </div>
         </div>
-        
-        
+
+
         <div class="row">
             <footer class="hide-for-large-up">
                 {% include 'footer.html' %}
             </footer>
         </div>
-        
+
         {% block script %}
         <script src="{{ SITEURL }}/theme/js/jquery.min.js"></script>
         <script src="{{ SITEURL }}/theme/js/foundation.min.js"></script>
@@ -206,6 +207,6 @@
         <script src="{{ SITEURL }}/theme/js/app.js"></script>
         {% endblock script %}
     </body>
-  
-  
+
+
 </html>
